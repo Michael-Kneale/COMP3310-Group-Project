@@ -3,6 +3,7 @@ import java.awt.event.*;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Random;
 // import java.util.Scanner;
 // import java.sql.Connection;
 // import java.sql.DriverManager;
@@ -14,6 +15,7 @@ public class Board {
     SQLiteConnectionManager wordleDatabaseConnection;
     int secretWordIndex;
     int numberOfWords;
+    Random rand = new Random();
 
     public Board(){
         wordleDatabaseConnection = new SQLiteConnectionManager("words.db");
@@ -57,8 +59,9 @@ public class Board {
 
 
         grid = new Grid(6,4, wordleDatabaseConnection);
-        secretWordIndex = 2;
-        String theWord = wordleDatabaseConnection.getWordAtIndex(2);
+        //Selects the secret word from a random index
+        secretWordIndex = rand.nextInt(numberOfWords);
+        String theWord = wordleDatabaseConnection.getWordAtIndex(secretWordIndex);
         grid.setWord(theWord);
     }
 
@@ -84,7 +87,10 @@ public class Board {
         if(e.getKeyCode() == KeyEvent.VK_ESCAPE){
             grid.keyPressedEscape();
             
-            secretWordIndex = ( secretWordIndex + 1 ) % numberOfWords;
+            //Selects the secret word from a random index
+            int secretWordIndex = rand.nextInt(numberOfWords);
+
+            //secretWordIndex = ( secretWordIndex + 1 ) % numberOfWords;
             String theWord = wordleDatabaseConnection.getWordAtIndex(secretWordIndex);
             grid.setWord(theWord);
 

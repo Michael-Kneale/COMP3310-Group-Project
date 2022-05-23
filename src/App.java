@@ -6,8 +6,8 @@ import java.time.Instant;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-
-public class App extends JFrame {
+//public class App extends JFrame {
+final public class App extends JFrame {
 
     class WordleGame extends JPanel implements KeyListener{
         Board board;

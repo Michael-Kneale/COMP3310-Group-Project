@@ -60,7 +60,7 @@ public class SQLiteConnectionManager {
     }
 
     /**
-     * Check that the file has been cr3eated
+     * Check that the file has been created
      *
      * @return true if the file exists in the correct location, false otherwise. If no url defined, also false.
      */
@@ -140,7 +140,7 @@ public class SQLiteConnectionManager {
             //pstmt.setInt(1, index);
             ResultSet cursor = pstmt.executeQuery();
             if(cursor.next()){
-                System.out.println("successful next curser sqlite");
+                System.out.println("successful next cursor sqlite");
                 result = cursor.getString(1);
             }
         } catch (SQLException e) {
@@ -148,7 +148,7 @@ public class SQLiteConnectionManager {
         }
         System.out.println("getWordAtIndex===========================");
         System.out.println("sql: " + sql);
-        System.out.println("result: " + result);
+        //System.out.println("result: " + result);
 
         return result;
     }

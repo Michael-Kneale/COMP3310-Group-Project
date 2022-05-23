@@ -85,7 +85,7 @@ public class Grid implements Iterable<Cell>{
         if(!gameFinished){
             
             //is the row full? If so, let's compare!
-            if( activeColumn == cells[activeRow].length -1 && 
+            if(activeColumn == cells[activeRow].length -1 && 
                 !cells[activeRow][activeColumn].getStoredCharacter().equals(" ")){
                 
                 if(checkActiveRowAgainstWord()){
@@ -158,10 +158,10 @@ public class Grid implements Iterable<Cell>{
             if(!highlighted.get(i)){
                 char c = cells[activeRow][i].getStoredCharacter().charAt(0);
                 int countHighlighted = numberAlreadyHighlighted(c, cells[activeRow], highlighted);
-                int countOccurences = numberOccurencesInGoal(c);
+                int countOccurrences = numberOccurrencesInGoal(c);
 
                 if(wordToGuess.contains(cells[activeRow][i].getStoredCharacter())){
-                    if(countHighlighted < countOccurences){
+                    if(countHighlighted < countOccurrences){
                         cells[activeRow][i].setState(2); 
                         highlighted.set(i);
                     }
@@ -182,7 +182,7 @@ public class Grid implements Iterable<Cell>{
         return counter;
     }
 
-    protected int numberOccurencesInGoal(char searchChar){
+    protected int numberOccurrencesInGoal(char searchChar){
         int counter = 0;
         for( int i = 0; i < wordToGuess.length(); i++ ){
             if(wordToGuess.charAt(i) == searchChar){
