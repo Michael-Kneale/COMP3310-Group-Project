@@ -137,7 +137,8 @@ public class Grid implements Iterable<Cell>{
         for(int i = 0; i < cells[activeRow].length; i++){
             word = word + cells[activeRow][i].getStoredCharacter();
         }
-        return word.equals(wordToGuess);
+        return word.equalsIgnoreCase(wordToGuess);
+        //return word.equals(wordToGuess);
     }
 
     protected void applyHighlightingToCurrentRow(){
