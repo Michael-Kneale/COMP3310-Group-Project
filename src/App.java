@@ -9,9 +9,10 @@ import javax.swing.JPanel;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-
-
 public class App extends JFrame {
+
+    //import logger
+    private static final Logger logger = Logger.getLogger(App.class.getName());
 
     class WordleGame extends JPanel implements KeyListener{
         Board board;
@@ -68,9 +69,9 @@ public class App extends JFrame {
             try {
                 Thread.sleep(20L - howLong);
             } catch (InterruptedException e) {
-                System.out.println("thread was interrupted, but who cares?");
+                logger.log(Level.WARNING, "thread was interrupted, but who cares?", e);
             } catch (IllegalArgumentException e) {
-                System.out.println("application can't keep up with framerate");
+                logger.log(Level.WARNING, "application can't keep up with framerate", e);
             }
         }
     }
