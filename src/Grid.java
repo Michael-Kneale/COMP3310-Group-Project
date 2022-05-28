@@ -8,6 +8,10 @@ import java.util.logging.Level;
 
 
 public class Grid implements Iterable<Cell>{
+
+    //import logger
+    private static final Logger logger = Logger.getLogger(App.class.getName());
+
     Cell[][] cells;
     int activeRow;
     int activeColumn;
@@ -123,7 +127,7 @@ public class Grid implements Iterable<Cell>{
 
     void keyPressedLetter(char letter){
         if(!gameFinished){
-            System.out.println("grid keypress received letter: " + letter);
+            logger.log(Level.INFO, "grid keypress received letter: " + letter);
             cells[activeRow][activeColumn].setCharacter(letter, 1);
             if(activeColumn < cells[activeRow].length -1){
                 //not last character
