@@ -13,6 +13,10 @@ import java.util.logging.Level;
 
 
 public class Board {
+
+    //import logger
+    private static final Logger logger = Logger.getLogger(App.class.getName());
+
     Grid grid;
     SQLiteConnectionManager wordleDatabaseConnection;
     int secretWordIndex;
@@ -25,10 +29,10 @@ public class Board {
         wordleDatabaseConnection.createNewDatabase("words.db");
         if (wordleDatabaseConnection.checkIfConnectionDefined())
         {
-            System.out.println("Wordle created and connected.");
+            logger.log(Level.INFO, "Wordle created and connected.");
             if(wordleDatabaseConnection.createWordleTables())
             {
-                System.out.println("Wordle structures in place.");
+                logger.log(Level.INFO, "Wordle structures in place.");
                 setupStage = 1;
             }
         }
@@ -49,12 +53,12 @@ public class Board {
                 setupStage = 2;
             }catch(IOException e)
             {
-                System.out.println(e.getMessage());
+                logger.log(Level.WARNING, "IOException", e);
             }
 
         }
         else{
-            System.out.println("Not able to Launch. Sorry!");
+            logger.log(Level.SEVERE, "Not able to Launch. Sorry!");
         }
 
 
@@ -74,15 +78,15 @@ public class Board {
     }    
 
     public void keyPressed(KeyEvent e){
-        System.out.println("Key Pressed! " + e.getKeyCode());
+        logger.log(Level.INFO, "Key Pressed! " + e.getKeyCode());
 
         if(e.getKeyCode() == KeyEvent.VK_ENTER){
             grid.keyPressedEnter();
-            System.out.println("Enter Key");
+            logger.log(Level.INFO, "Enter Key");
         }
         if(e.getKeyCode() == KeyEvent.VK_BACK_SPACE){
             grid.keyPressedBackspace();
-            System.out.println("Backspace Key");
+            logger.log(Level.INFO, "Backspace Key");
         }
         if(e.getKeyCode() == KeyEvent.VK_ESCAPE){
             grid.keyPressedEscape();
@@ -91,11 +95,11 @@ public class Board {
             String theWord = wordleDatabaseConnection.getWordAtIndex(secretWordIndex);
             grid.setWord(theWord);
 
-            System.out.println("Escape Key");
+            logger.log(Level.INFO, "Escape Key");
         }
         if(e.getKeyCode()>= KeyEvent.VK_A && e.getKeyCode() <= KeyEvent.VK_Z){
             grid.keyPressedLetter(e.getKeyChar());
-            System.out.println("Character Key");
+            logger.log(Level.INFO, "Character Key");
         }
 
     }
