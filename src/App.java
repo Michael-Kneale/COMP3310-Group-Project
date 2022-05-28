@@ -6,6 +6,10 @@ import java.time.Instant;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+import java.util.logging.Logger;
+import java.util.logging.Level;
+
+
 
 public class App extends JFrame {
 

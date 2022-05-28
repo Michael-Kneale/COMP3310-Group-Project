@@ -6,6 +6,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import java.util.logging.Logger;
+import java.util.logging.Level;
+
 public class SQLiteConnectionManager {
 
     //private Connection wordleDBConn = null;

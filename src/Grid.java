@@ -3,6 +3,9 @@ import java.util.BitSet;
 import java.util.Iterator;
 import java.util.function.Consumer;
 
+import java.util.logging.Logger;
+import java.util.logging.Level;
+
 
 public class Grid implements Iterable<Cell>{
     Cell[][] cells;
