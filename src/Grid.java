@@ -155,9 +155,10 @@ public class Grid implements Iterable<Cell>{
     }
 
     protected boolean checkActiveRowAgainstWord(){
-        String word ="";
+        StringBuilder word =new StringBuilder("");
+
         for(int i = 0; i < cells[activeRow].length; i++){
-            word = word + cells[activeRow][i].getStoredCharacter();
+            word.append(cells[activeRow][i].getStoredCharacter());
         }
         return word.equals(wordToGuess);
     }
