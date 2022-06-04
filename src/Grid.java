@@ -123,7 +123,6 @@ public class Grid implements Iterable<Cell>{
                     }
                     winCounter += 1;
                     counter.setCounter(String.valueOf(winCounter));
-                    System.out.println(winCounter);
                     gameFinished = true;
                 }else{
                     if(activeRow >= cells.length-1){

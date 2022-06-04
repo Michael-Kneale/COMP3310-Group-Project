@@ -170,7 +170,6 @@ public class SQLiteConnectionManager {
         logger.log(Level.INFO,"getWordAtIndex===========================");
         logger.log(Level.INFO,"sql: " + sql);
         logger.log(Level.INFO,"result: " + result);
-        System.out.println(result);
 
         return result;
     }

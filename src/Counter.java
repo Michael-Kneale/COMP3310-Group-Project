@@ -7,7 +7,6 @@ import java.awt.Rectangle;
 public class Counter extends Rectangle{
     private static int size = 70;
     protected Color backbgroundColor;
-    protected Color textColor;
     protected String displayCharacter;
 
     public Counter(int x, int y){
