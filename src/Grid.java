@@ -9,8 +9,6 @@ import java.util.logging.LogManager;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-import java.awt.Color;
-
 
 public class Grid implements Iterable<Cell>{
 
@@ -32,6 +30,7 @@ public class Grid implements Iterable<Cell>{
     Cell[][] cells;
     int activeRow;
     int activeColumn;
+    int winCounter = 0;
     String wordToGuess;
     boolean gameFinished;
     SQLiteConnectionManager wordleDatabaseConnection;
@@ -119,6 +118,7 @@ public class Grid implements Iterable<Cell>{
                         cells[activeRow][i].setInactive();
                         cells[activeRow][i].setState(3);
                     }
+                    winCounter += 1;
                     gameFinished = true;
                 }else{
                     if(activeRow >= cells.length-1){
