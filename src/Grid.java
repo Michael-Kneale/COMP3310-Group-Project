@@ -3,8 +3,30 @@ import java.util.BitSet;
 import java.util.Iterator;
 import java.util.function.Consumer;
 
+import java.util.logging.Logger;
+import java.util.logging.Level;
+import java.util.logging.LogManager;
+import java.io.FileInputStream;
+import java.io.IOException;
+
 
 public class Grid implements Iterable<Cell>{
+
+    static {
+        // must set before the Logger
+        // loads logging.properties 
+        try {
+            //If the program cannot find the file, right-click on the .properties file, and get the relative path
+            LogManager.getLogManager().readConfiguration(new FileInputStream("resources/logging.properties"));
+        } catch (SecurityException | IOException e1) {
+            //No logger, yet. Printing to console
+            e1.printStackTrace();
+        }
+    }
+
+    //import logger
+    private static final Logger logger = Logger.getLogger(App.class.getName());
+
     Cell[][] cells;
     int activeRow;
     int activeColumn;
@@ -120,7 +142,7 @@ public class Grid implements Iterable<Cell>{
 
     void keyPressedLetter(char letter){
         if(!gameFinished){
-            System.out.println("grid keypress received letter: " + letter);
+            logger.log(Level.INFO, "grid keypress received letter: " + letter);
             cells[activeRow][activeColumn].setCharacter(letter, 1);
             if(activeColumn < cells[activeRow].length -1){
                 //not last character
@@ -133,9 +155,10 @@ public class Grid implements Iterable<Cell>{
     }
 
     protected boolean checkActiveRowAgainstWord(){
-        String word ="";
+        StringBuilder word =new StringBuilder("");
+
         for(int i = 0; i < cells[activeRow].length; i++){
-            word = word + cells[activeRow][i].getStoredCharacter();
+            word.append(cells[activeRow][i].getStoredCharacter());
         }
         return word.equalsIgnoreCase(wordToGuess);
         //return word.equals(wordToGuess);

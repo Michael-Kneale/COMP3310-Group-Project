@@ -6,7 +6,28 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import java.util.logging.Logger;
+import java.util.logging.Level;
+import java.util.logging.LogManager;
+import java.io.FileInputStream;
+import java.io.IOException;
+
 public class SQLiteConnectionManager {
+
+    static {
+        // must set before the Logger
+        // loads logging.properties 
+        try {
+            //If the program cannot find the file, right-click on the .properties file, and get the relative path
+            LogManager.getLogManager().readConfiguration(new FileInputStream("resources/logging.properties"));
+        } catch (SecurityException | IOException e1) {
+            //No logger, yet. Printing to console
+            e1.printStackTrace();
+        }
+    }
+
+    //import logger
+    private static final Logger logger = Logger.getLogger(App.class.getName());
 
     //private Connection wordleDBConn = null;
     private String databaseURL = "";
@@ -49,13 +70,13 @@ public class SQLiteConnectionManager {
         try (Connection conn = DriverManager.getConnection(databaseURL)) {
             if (conn != null) {
                 DatabaseMetaData meta = conn.getMetaData();
-                System.out.println("The driver name is " + meta.getDriverName());
-                System.out.println("A new database has been created.");
+                logger.log(Level.INFO, "The driver name is " + meta.getDriverName());
+                logger.log(Level.INFO, "A new database has been created.");
                 
             }
 
         } catch (SQLException e) {
-            System.out.println(e.getMessage());
+            logger.log(Level.WARNING, "SQLException", e);
         }
     }
 
@@ -73,7 +94,7 @@ public class SQLiteConnectionManager {
                     return true; 
                 }
             } catch (SQLException e) {
-                System.out.println(e.getMessage());
+                logger.log(Level.WARNING, "SQLException", e);
                 return false;
             }
         }
@@ -99,7 +120,7 @@ public class SQLiteConnectionManager {
                     return true;  
                 } 
             } catch (SQLException e) {
-                System.out.println(e.getMessage());
+                logger.log(Level.WARNING, "SQLException", e);
                 return false;
             }
             
@@ -123,7 +144,7 @@ public class SQLiteConnectionManager {
             pstmt.setString(2, word);
             pstmt.executeUpdate();
         } catch (SQLException e) {
-            System.out.println(e.getMessage());
+            logger.log(Level.WARNING, "SQLException", e);
         }
 
     }
@@ -140,15 +161,15 @@ public class SQLiteConnectionManager {
             //pstmt.setInt(1, index);
             ResultSet cursor = pstmt.executeQuery();
             if(cursor.next()){
-                System.out.println("successful next cursor sqlite");
+                logger.log(Level.INFO, "successful next curser sqlite");
                 result = cursor.getString(1);
             }
         } catch (SQLException e) {
-            System.out.println(e.getMessage());
+            logger.log(Level.WARNING, "SQLException", e);
         }
-        System.out.println("getWordAtIndex===========================");
-        System.out.println("sql: " + sql);
-        //System.out.println("result: " + result);
+        logger.log(Level.INFO,"getWordAtIndex===========================");
+        logger.log(Level.INFO,"sql: " + sql);
+        logger.log(Level.INFO,"result: " + result);
 
         return result;
     }
@@ -160,18 +181,20 @@ public class SQLiteConnectionManager {
      */
     public boolean isValidWord(String guess)
     {
-        String sql = "SELECT count(id) as total FROM validWords WHERE word like'"+guess+"';";
+        //Parameterized Statement (Option 1 defense)
+        String sql = "SELECT count(id) as total FROM validWords WHERE word like ?;";
         
         try (   Connection conn = DriverManager.getConnection(databaseURL);
                     PreparedStatement stmt = conn.prepareStatement(sql)
                 ) 
             {
                 if (conn != null) {
+                    stmt.setString(1,guess);
                     ResultSet resultRows  = stmt.executeQuery();
                     while (resultRows.next())
                     {
                         int result = resultRows.getInt("total");
-                        System.out.println("Total found:" + result);
+                        logger.log(Level.INFO,"Total found:" + result);
                         if(result >= 1)
                         {
                             return true;
@@ -186,7 +209,7 @@ public class SQLiteConnectionManager {
                 return false;
 
             } catch (SQLException e) {
-                System.out.println(e.getMessage());
+                logger.log(Level.WARNING, "SQLException", e);
                 return false;
             }
 

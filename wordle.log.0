@@ -1,0 +1,758 @@
+May 30, 2022 12:47:42 AM SQLiteConnectionManager createNewDatabase
+INFO: The driver name is SQLite JDBC
+May 30, 2022 12:47:42 AM SQLiteConnectionManager createNewDatabase
+INFO: A new database has been created.
+May 30, 2022 12:47:42 AM Board <init>
+INFO: Wordle created and connected.
+May 30, 2022 12:47:42 AM Board <init>
+INFO: Wordle structures in place.
+May 30, 2022 12:47:44 AM SQLiteConnectionManager getWordAtIndex
+INFO: successful next curser sqlite
+May 30, 2022 12:47:44 AM SQLiteConnectionManager getWordAtIndex
+INFO: getWordAtIndex===========================
+May 30, 2022 12:47:44 AM SQLiteConnectionManager getWordAtIndex
+INFO: sql: SELECT word FROM validWords where id=2;
+May 30, 2022 12:47:44 AM SQLiteConnectionManager getWordAtIndex
+INFO: result: acid
+May 30, 2022 12:47:49 AM Board keyPressed
+INFO: Key Pressed! 87
+May 30, 2022 12:47:49 AM Grid keyPressedLetter
+INFO: grid keypress received letter: w
+May 30, 2022 12:47:49 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:47:51 AM Board keyPressed
+INFO: Key Pressed! 79
+May 30, 2022 12:47:51 AM Grid keyPressedLetter
+INFO: grid keypress received letter: o
+May 30, 2022 12:47:51 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:47:52 AM Board keyPressed
+INFO: Key Pressed! 82
+May 30, 2022 12:47:52 AM Grid keyPressedLetter
+INFO: grid keypress received letter: r
+May 30, 2022 12:47:52 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:47:52 AM Board keyPressed
+INFO: Key Pressed! 68
+May 30, 2022 12:47:52 AM Grid keyPressedLetter
+INFO: grid keypress received letter: d
+May 30, 2022 12:47:52 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:47:54 AM Board keyPressed
+INFO: Key Pressed! 10
+May 30, 2022 12:47:54 AM Board keyPressed
+INFO: Enter Key
+May 30, 2022 12:48:00 AM Board keyPressed
+INFO: Key Pressed! 68
+May 30, 2022 12:48:00 AM Grid keyPressedLetter
+INFO: grid keypress received letter: d
+May 30, 2022 12:48:00 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:48:00 AM Board keyPressed
+INFO: Key Pressed! 69
+May 30, 2022 12:48:00 AM Grid keyPressedLetter
+INFO: grid keypress received letter: e
+May 30, 2022 12:48:00 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:48:00 AM Board keyPressed
+INFO: Key Pressed! 65
+May 30, 2022 12:48:00 AM Grid keyPressedLetter
+INFO: grid keypress received letter: a
+May 30, 2022 12:48:00 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:48:01 AM Board keyPressed
+INFO: Key Pressed! 70
+May 30, 2022 12:48:01 AM Grid keyPressedLetter
+INFO: grid keypress received letter: f
+May 30, 2022 12:48:01 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:48:01 AM Board keyPressed
+INFO: Key Pressed! 10
+May 30, 2022 12:48:01 AM Board keyPressed
+INFO: Enter Key
+May 30, 2022 12:48:07 AM Board keyPressed
+INFO: Key Pressed! 65
+May 30, 2022 12:48:07 AM Grid keyPressedLetter
+INFO: grid keypress received letter: a
+May 30, 2022 12:48:07 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:48:07 AM Board keyPressed
+INFO: Key Pressed! 66
+May 30, 2022 12:48:07 AM Grid keyPressedLetter
+INFO: grid keypress received letter: b
+May 30, 2022 12:48:07 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:48:08 AM Board keyPressed
+INFO: Key Pressed! 76
+May 30, 2022 12:48:08 AM Grid keyPressedLetter
+INFO: grid keypress received letter: l
+May 30, 2022 12:48:08 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:48:08 AM Board keyPressed
+INFO: Key Pressed! 69
+May 30, 2022 12:48:08 AM Grid keyPressedLetter
+INFO: grid keypress received letter: e
+May 30, 2022 12:48:08 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:48:08 AM Board keyPressed
+INFO: Key Pressed! 10
+May 30, 2022 12:48:08 AM Board keyPressed
+INFO: Enter Key
+May 30, 2022 12:48:14 AM Board keyPressed
+INFO: Key Pressed! 77
+May 30, 2022 12:48:14 AM Grid keyPressedLetter
+INFO: grid keypress received letter: m
+May 30, 2022 12:48:14 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:48:14 AM Board keyPressed
+INFO: Key Pressed! 79
+May 30, 2022 12:48:14 AM Grid keyPressedLetter
+INFO: grid keypress received letter: o
+May 30, 2022 12:48:14 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:48:14 AM Board keyPressed
+INFO: Key Pressed! 83
+May 30, 2022 12:48:14 AM Grid keyPressedLetter
+INFO: grid keypress received letter: s
+May 30, 2022 12:48:14 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:48:15 AM Board keyPressed
+INFO: Key Pressed! 84
+May 30, 2022 12:48:15 AM Grid keyPressedLetter
+INFO: grid keypress received letter: t
+May 30, 2022 12:48:15 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:48:15 AM Board keyPressed
+INFO: Key Pressed! 10
+May 30, 2022 12:48:15 AM Board keyPressed
+INFO: Enter Key
+May 30, 2022 12:48:19 AM Board keyPressed
+INFO: Key Pressed! 72
+May 30, 2022 12:48:19 AM Grid keyPressedLetter
+INFO: grid keypress received letter: h
+May 30, 2022 12:48:19 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:48:19 AM Board keyPressed
+INFO: Key Pressed! 65
+May 30, 2022 12:48:19 AM Grid keyPressedLetter
+INFO: grid keypress received letter: a
+May 30, 2022 12:48:19 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:48:19 AM Board keyPressed
+INFO: Key Pressed! 76
+May 30, 2022 12:48:19 AM Grid keyPressedLetter
+INFO: grid keypress received letter: l
+May 30, 2022 12:48:19 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:48:20 AM Board keyPressed
+INFO: Key Pressed! 76
+May 30, 2022 12:48:20 AM Grid keyPressedLetter
+INFO: grid keypress received letter: l
+May 30, 2022 12:48:20 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:48:20 AM Board keyPressed
+INFO: Key Pressed! 10
+May 30, 2022 12:48:20 AM Board keyPressed
+INFO: Enter Key
+May 30, 2022 12:48:27 AM Board keyPressed
+INFO: Key Pressed! 77
+May 30, 2022 12:48:27 AM Grid keyPressedLetter
+INFO: grid keypress received letter: m
+May 30, 2022 12:48:27 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:48:27 AM Board keyPressed
+INFO: Key Pressed! 85
+May 30, 2022 12:48:27 AM Grid keyPressedLetter
+INFO: grid keypress received letter: u
+May 30, 2022 12:48:27 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:48:28 AM Board keyPressed
+INFO: Key Pressed! 83
+May 30, 2022 12:48:28 AM Grid keyPressedLetter
+INFO: grid keypress received letter: s
+May 30, 2022 12:48:28 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:48:28 AM Board keyPressed
+INFO: Key Pressed! 84
+May 30, 2022 12:48:28 AM Grid keyPressedLetter
+INFO: grid keypress received letter: t
+May 30, 2022 12:48:28 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:48:28 AM Board keyPressed
+INFO: Key Pressed! 10
+May 30, 2022 12:48:28 AM Board keyPressed
+INFO: Enter Key
+May 30, 2022 12:48:40 AM Board keyPressed
+INFO: Key Pressed! 10
+May 30, 2022 12:48:40 AM Board keyPressed
+INFO: Enter Key
+May 30, 2022 12:48:41 AM Board keyPressed
+INFO: Key Pressed! 10
+May 30, 2022 12:48:41 AM Board keyPressed
+INFO: Enter Key
+May 30, 2022 12:48:41 AM Board keyPressed
+INFO: Key Pressed! 10
+May 30, 2022 12:48:41 AM Board keyPressed
+INFO: Enter Key
+May 30, 2022 12:48:41 AM Board keyPressed
+INFO: Key Pressed! 10
+May 30, 2022 12:48:41 AM Board keyPressed
+INFO: Enter Key
+May 30, 2022 12:49:09 AM SQLiteConnectionManager createNewDatabase
+INFO: The driver name is SQLite JDBC
+May 30, 2022 12:49:09 AM SQLiteConnectionManager createNewDatabase
+INFO: A new database has been created.
+May 30, 2022 12:49:09 AM Board <init>
+INFO: Wordle created and connected.
+May 30, 2022 12:49:09 AM Board <init>
+INFO: Wordle structures in place.
+May 30, 2022 12:49:11 AM SQLiteConnectionManager getWordAtIndex
+INFO: successful next curser sqlite
+May 30, 2022 12:49:11 AM SQLiteConnectionManager getWordAtIndex
+INFO: getWordAtIndex===========================
+May 30, 2022 12:49:11 AM SQLiteConnectionManager getWordAtIndex
+INFO: sql: SELECT word FROM validWords where id=2;
+May 30, 2022 12:49:11 AM SQLiteConnectionManager getWordAtIndex
+INFO: result: acid
+May 30, 2022 12:49:30 AM Board keyPressed
+INFO: Key Pressed! 65
+May 30, 2022 12:49:30 AM Grid keyPressedLetter
+INFO: grid keypress received letter: a
+May 30, 2022 12:49:30 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:49:30 AM Board keyPressed
+INFO: Key Pressed! 66
+May 30, 2022 12:49:30 AM Grid keyPressedLetter
+INFO: grid keypress received letter: b
+May 30, 2022 12:49:30 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:49:31 AM Board keyPressed
+INFO: Key Pressed! 76
+May 30, 2022 12:49:31 AM Grid keyPressedLetter
+INFO: grid keypress received letter: l
+May 30, 2022 12:49:31 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:49:31 AM Board keyPressed
+INFO: Key Pressed! 69
+May 30, 2022 12:49:31 AM Grid keyPressedLetter
+INFO: grid keypress received letter: e
+May 30, 2022 12:49:31 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:49:31 AM Board keyPressed
+INFO: Key Pressed! 10
+May 30, 2022 12:49:31 AM Board keyPressed
+INFO: Enter Key
+May 30, 2022 12:49:32 AM Board keyPressed
+INFO: Key Pressed! 65
+May 30, 2022 12:49:32 AM Grid keyPressedLetter
+INFO: grid keypress received letter: a
+May 30, 2022 12:49:32 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:49:33 AM Board keyPressed
+INFO: Key Pressed! 71
+May 30, 2022 12:49:33 AM Grid keyPressedLetter
+INFO: grid keypress received letter: g
+May 30, 2022 12:49:33 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:49:33 AM Board keyPressed
+INFO: Key Pressed! 69
+May 30, 2022 12:49:33 AM Grid keyPressedLetter
+INFO: grid keypress received letter: e
+May 30, 2022 12:49:33 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:49:33 AM Board keyPressed
+INFO: Key Pressed! 68
+May 30, 2022 12:49:33 AM Grid keyPressedLetter
+INFO: grid keypress received letter: d
+May 30, 2022 12:49:33 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:49:35 AM Board keyPressed
+INFO: Key Pressed! 10
+May 30, 2022 12:49:35 AM Board keyPressed
+INFO: Enter Key
+May 30, 2022 12:49:36 AM Board keyPressed
+INFO: Key Pressed! 65
+May 30, 2022 12:49:36 AM Grid keyPressedLetter
+INFO: grid keypress received letter: a
+May 30, 2022 12:49:36 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:49:36 AM Board keyPressed
+INFO: Key Pressed! 67
+May 30, 2022 12:49:36 AM Grid keyPressedLetter
+INFO: grid keypress received letter: c
+May 30, 2022 12:49:36 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:49:36 AM Board keyPressed
+INFO: Key Pressed! 73
+May 30, 2022 12:49:36 AM Grid keyPressedLetter
+INFO: grid keypress received letter: i
+May 30, 2022 12:49:36 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:49:36 AM Board keyPressed
+INFO: Key Pressed! 68
+May 30, 2022 12:49:36 AM Grid keyPressedLetter
+INFO: grid keypress received letter: d
+May 30, 2022 12:49:36 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:49:37 AM Board keyPressed
+INFO: Key Pressed! 10
+May 30, 2022 12:49:37 AM Board keyPressed
+INFO: Enter Key
+May 30, 2022 12:49:39 AM Board keyPressed
+INFO: Key Pressed! 65
+May 30, 2022 12:49:39 AM Grid keyPressedLetter
+INFO: grid keypress received letter: a
+May 30, 2022 12:49:39 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:49:39 AM Board keyPressed
+INFO: Key Pressed! 76
+May 30, 2022 12:49:39 AM Grid keyPressedLetter
+INFO: grid keypress received letter: l
+May 30, 2022 12:49:39 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:49:39 AM Board keyPressed
+INFO: Key Pressed! 83
+May 30, 2022 12:49:39 AM Grid keyPressedLetter
+INFO: grid keypress received letter: s
+May 30, 2022 12:49:39 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:49:39 AM Board keyPressed
+INFO: Key Pressed! 79
+May 30, 2022 12:49:39 AM Grid keyPressedLetter
+INFO: grid keypress received letter: o
+May 30, 2022 12:49:39 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:49:40 AM Board keyPressed
+INFO: Key Pressed! 10
+May 30, 2022 12:49:40 AM Board keyPressed
+INFO: Enter Key
+May 30, 2022 12:49:42 AM Board keyPressed
+INFO: Key Pressed! 65
+May 30, 2022 12:49:42 AM Grid keyPressedLetter
+INFO: grid keypress received letter: a
+May 30, 2022 12:49:42 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:49:42 AM Board keyPressed
+INFO: Key Pressed! 82
+May 30, 2022 12:49:42 AM Grid keyPressedLetter
+INFO: grid keypress received letter: r
+May 30, 2022 12:49:42 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:49:43 AM Board keyPressed
+INFO: Key Pressed! 69
+May 30, 2022 12:49:43 AM Grid keyPressedLetter
+INFO: grid keypress received letter: e
+May 30, 2022 12:49:43 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:49:43 AM Board keyPressed
+INFO: Key Pressed! 65
+May 30, 2022 12:49:43 AM Grid keyPressedLetter
+INFO: grid keypress received letter: a
+May 30, 2022 12:49:43 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:49:43 AM Board keyPressed
+INFO: Key Pressed! 10
+May 30, 2022 12:49:43 AM Board keyPressed
+INFO: Enter Key
+May 30, 2022 12:49:45 AM Board keyPressed
+INFO: Key Pressed! 65
+May 30, 2022 12:49:45 AM Grid keyPressedLetter
+INFO: grid keypress received letter: a
+May 30, 2022 12:49:45 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:49:46 AM Board keyPressed
+INFO: Key Pressed! 82
+May 30, 2022 12:49:46 AM Grid keyPressedLetter
+INFO: grid keypress received letter: r
+May 30, 2022 12:49:46 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:49:46 AM Board keyPressed
+INFO: Key Pressed! 77
+May 30, 2022 12:49:46 AM Grid keyPressedLetter
+INFO: grid keypress received letter: m
+May 30, 2022 12:49:46 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:49:46 AM Board keyPressed
+INFO: Key Pressed! 89
+May 30, 2022 12:49:46 AM Grid keyPressedLetter
+INFO: grid keypress received letter: y
+May 30, 2022 12:49:46 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:49:47 AM Board keyPressed
+INFO: Key Pressed! 10
+May 30, 2022 12:49:47 AM Board keyPressed
+INFO: Enter Key
+May 30, 2022 12:55:46 AM SQLiteConnectionManager createNewDatabase
+INFO: The driver name is SQLite JDBC
+May 30, 2022 12:55:46 AM SQLiteConnectionManager createNewDatabase
+INFO: A new database has been created.
+May 30, 2022 12:55:46 AM Board <init>
+INFO: Wordle created and connected.
+May 30, 2022 12:55:46 AM Board <init>
+INFO: Wordle structures in place.
+May 30, 2022 12:55:48 AM SQLiteConnectionManager getWordAtIndex
+INFO: successful next curser sqlite
+May 30, 2022 12:55:48 AM SQLiteConnectionManager getWordAtIndex
+INFO: getWordAtIndex===========================
+May 30, 2022 12:55:48 AM SQLiteConnectionManager getWordAtIndex
+INFO: sql: SELECT word FROM validWords where id=2;
+May 30, 2022 12:55:48 AM SQLiteConnectionManager getWordAtIndex
+INFO: result: acid
+May 30, 2022 12:55:51 AM Board keyPressed
+INFO: Key Pressed! 65
+May 30, 2022 12:55:51 AM Grid keyPressedLetter
+INFO: grid keypress received letter: a
+May 30, 2022 12:55:51 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:55:52 AM Board keyPressed
+INFO: Key Pressed! 8
+May 30, 2022 12:55:52 AM Board keyPressed
+INFO: Backspace Key
+May 30, 2022 12:55:52 AM Board keyPressed
+INFO: Key Pressed! 8
+May 30, 2022 12:55:52 AM Board keyPressed
+INFO: Backspace Key
+May 30, 2022 12:55:53 AM Board keyPressed
+INFO: Key Pressed! 65
+May 30, 2022 12:55:53 AM Grid keyPressedLetter
+INFO: grid keypress received letter: a
+May 30, 2022 12:55:53 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:55:54 AM Board keyPressed
+INFO: Key Pressed! 8
+May 30, 2022 12:55:54 AM Board keyPressed
+INFO: Backspace Key
+May 30, 2022 12:55:55 AM Board keyPressed
+INFO: Key Pressed! 8
+May 30, 2022 12:55:55 AM Board keyPressed
+INFO: Backspace Key
+May 30, 2022 12:55:57 AM Board keyPressed
+INFO: Key Pressed! 65
+May 30, 2022 12:55:57 AM Grid keyPressedLetter
+INFO: grid keypress received letter: a
+May 30, 2022 12:55:57 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:55:59 AM Board keyPressed
+INFO: Key Pressed! 66
+May 30, 2022 12:55:59 AM Grid keyPressedLetter
+INFO: grid keypress received letter: b
+May 30, 2022 12:55:59 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:55:59 AM Board keyPressed
+INFO: Key Pressed! 76
+May 30, 2022 12:55:59 AM Grid keyPressedLetter
+INFO: grid keypress received letter: l
+May 30, 2022 12:55:59 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:55:59 AM Board keyPressed
+INFO: Key Pressed! 69
+May 30, 2022 12:55:59 AM Grid keyPressedLetter
+INFO: grid keypress received letter: e
+May 30, 2022 12:55:59 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:56:02 AM Board keyPressed
+INFO: Key Pressed! 10
+May 30, 2022 12:56:02 AM Board keyPressed
+INFO: Enter Key
+May 30, 2022 12:56:05 AM Board keyPressed
+INFO: Key Pressed! 65
+May 30, 2022 12:56:05 AM Grid keyPressedLetter
+INFO: grid keypress received letter: a
+May 30, 2022 12:56:05 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:56:06 AM Board keyPressed
+INFO: Key Pressed! 88
+May 30, 2022 12:56:06 AM Grid keyPressedLetter
+INFO: grid keypress received letter: x
+May 30, 2022 12:56:06 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:56:06 AM Board keyPressed
+INFO: Key Pressed! 69
+May 30, 2022 12:56:06 AM Grid keyPressedLetter
+INFO: grid keypress received letter: e
+May 30, 2022 12:56:06 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:56:07 AM Board keyPressed
+INFO: Key Pressed! 8
+May 30, 2022 12:56:07 AM Board keyPressed
+INFO: Backspace Key
+May 30, 2022 12:56:08 AM Board keyPressed
+INFO: Key Pressed! 8
+May 30, 2022 12:56:08 AM Board keyPressed
+INFO: Backspace Key
+May 30, 2022 12:56:09 AM Board keyPressed
+INFO: Key Pressed! 76
+May 30, 2022 12:56:09 AM Grid keyPressedLetter
+INFO: grid keypress received letter: l
+May 30, 2022 12:56:09 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:56:10 AM Board keyPressed
+INFO: Key Pressed! 69
+May 30, 2022 12:56:10 AM Grid keyPressedLetter
+INFO: grid keypress received letter: e
+May 30, 2022 12:56:10 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:56:11 AM Board keyPressed
+INFO: Key Pressed! 8
+May 30, 2022 12:56:11 AM Board keyPressed
+INFO: Backspace Key
+May 30, 2022 12:56:11 AM Board keyPressed
+INFO: Key Pressed! 8
+May 30, 2022 12:56:11 AM Board keyPressed
+INFO: Backspace Key
+May 30, 2022 12:56:12 AM Board keyPressed
+INFO: Key Pressed! 8
+May 30, 2022 12:56:12 AM Board keyPressed
+INFO: Backspace Key
+May 30, 2022 12:56:13 AM Board keyPressed
+INFO: Key Pressed! 8
+May 30, 2022 12:56:13 AM Board keyPressed
+INFO: Backspace Key
+May 30, 2022 12:56:14 AM Board keyPressed
+INFO: Key Pressed! 65
+May 30, 2022 12:56:14 AM Grid keyPressedLetter
+INFO: grid keypress received letter: a
+May 30, 2022 12:56:14 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:56:14 AM Board keyPressed
+INFO: Key Pressed! 88
+May 30, 2022 12:56:14 AM Grid keyPressedLetter
+INFO: grid keypress received letter: x
+May 30, 2022 12:56:14 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:56:15 AM Board keyPressed
+INFO: Key Pressed! 76
+May 30, 2022 12:56:15 AM Grid keyPressedLetter
+INFO: grid keypress received letter: l
+May 30, 2022 12:56:15 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:56:15 AM Board keyPressed
+INFO: Key Pressed! 69
+May 30, 2022 12:56:15 AM Grid keyPressedLetter
+INFO: grid keypress received letter: e
+May 30, 2022 12:56:15 AM Board keyPressed
+INFO: Character Key
+May 30, 2022 12:56:16 AM Board keyPressed
+INFO: Key Pressed! 10
+May 30, 2022 12:56:16 AM Board keyPressed
+INFO: Enter Key
+May 30, 2022 1:51:18 AM SQLiteConnectionManager createNewDatabase
+INFO: The driver name is SQLite JDBC
+May 30, 2022 1:51:18 AM SQLiteConnectionManager createNewDatabase
+INFO: A new database has been created.
+May 30, 2022 1:51:18 AM Board <init>
+INFO: Wordle created and connected.
+May 30, 2022 1:51:18 AM Board <init>
+INFO: Wordle structures in place.
+May 30, 2022 1:51:20 AM SQLiteConnectionManager getWordAtIndex
+INFO: successful next curser sqlite
+May 30, 2022 1:51:20 AM SQLiteConnectionManager getWordAtIndex
+INFO: getWordAtIndex===========================
+May 30, 2022 1:51:20 AM SQLiteConnectionManager getWordAtIndex
+INFO: sql: SELECT word FROM validWords where id=2;
+May 30, 2022 1:51:20 AM SQLiteConnectionManager getWordAtIndex
+INFO: result: acid
+June 02, 2022 2:06:49 PM SQLiteConnectionManager createNewDatabase
+INFO: The driver name is SQLite JDBC
+June 02, 2022 2:06:49 PM SQLiteConnectionManager createNewDatabase
+INFO: A new database has been created.
+June 02, 2022 2:06:49 PM Board <init>
+INFO: Wordle created and connected.
+June 02, 2022 2:06:49 PM Board <init>
+INFO: Wordle structures in place.
+June 02, 2022 2:06:52 PM SQLiteConnectionManager getWordAtIndex
+INFO: successful next curser sqlite
+June 02, 2022 2:06:52 PM SQLiteConnectionManager getWordAtIndex
+INFO: getWordAtIndex===========================
+June 02, 2022 2:06:52 PM SQLiteConnectionManager getWordAtIndex
+INFO: sql: SELECT word FROM validWords where id=2;
+June 02, 2022 2:06:52 PM SQLiteConnectionManager getWordAtIndex
+INFO: result: acid
+June 02, 2022 2:06:56 PM Board keyPressed
+INFO: Key Pressed! 65
+June 02, 2022 2:06:56 PM Grid keyPressedLetter
+INFO: grid keypress received letter: a
+June 02, 2022 2:06:56 PM Board keyPressed
+INFO: Character Key
+June 02, 2022 2:06:58 PM Board keyPressed
+INFO: Key Pressed! 88
+June 02, 2022 2:06:58 PM Grid keyPressedLetter
+INFO: grid keypress received letter: x
+June 02, 2022 2:06:58 PM Board keyPressed
+INFO: Character Key
+June 02, 2022 2:06:59 PM Board keyPressed
+INFO: Key Pressed! 76
+June 02, 2022 2:06:59 PM Grid keyPressedLetter
+INFO: grid keypress received letter: l
+June 02, 2022 2:06:59 PM Board keyPressed
+INFO: Character Key
+June 02, 2022 2:07:00 PM Board keyPressed
+INFO: Key Pressed! 69
+June 02, 2022 2:07:00 PM Grid keyPressedLetter
+INFO: grid keypress received letter: e
+June 02, 2022 2:07:00 PM Board keyPressed
+INFO: Character Key
+June 02, 2022 2:07:01 PM Board keyPressed
+INFO: Key Pressed! 10
+June 02, 2022 2:07:01 PM Board keyPressed
+INFO: Enter Key
+June 02, 2022 2:07:06 PM Board keyPressed
+INFO: Key Pressed! 65
+June 02, 2022 2:07:06 PM Grid keyPressedLetter
+INFO: grid keypress received letter: a
+June 02, 2022 2:07:06 PM Board keyPressed
+INFO: Character Key
+June 02, 2022 2:07:07 PM Board keyPressed
+INFO: Key Pressed! 66
+June 02, 2022 2:07:07 PM Grid keyPressedLetter
+INFO: grid keypress received letter: b
+June 02, 2022 2:07:07 PM Board keyPressed
+INFO: Character Key
+June 02, 2022 2:07:07 PM Board keyPressed
+INFO: Key Pressed! 76
+June 02, 2022 2:07:07 PM Grid keyPressedLetter
+INFO: grid keypress received letter: l
+June 02, 2022 2:07:07 PM Board keyPressed
+INFO: Character Key
+June 02, 2022 2:07:07 PM Board keyPressed
+INFO: Key Pressed! 69
+June 02, 2022 2:07:07 PM Grid keyPressedLetter
+INFO: grid keypress received letter: e
+June 02, 2022 2:07:07 PM Board keyPressed
+INFO: Character Key
+June 02, 2022 2:07:07 PM Board keyPressed
+INFO: Key Pressed! 10
+June 02, 2022 2:07:07 PM Board keyPressed
+INFO: Enter Key
+June 02, 2022 2:07:12 PM Board keyPressed
+INFO: Key Pressed! 65
+June 02, 2022 2:07:12 PM Grid keyPressedLetter
+INFO: grid keypress received letter: a
+June 02, 2022 2:07:12 PM Board keyPressed
+INFO: Character Key
+June 02, 2022 2:07:40 PM Board keyPressed
+INFO: Key Pressed! 84
+June 02, 2022 2:07:40 PM Grid keyPressedLetter
+INFO: grid keypress received letter: t
+June 02, 2022 2:07:40 PM Board keyPressed
+INFO: Character Key
+June 02, 2022 2:07:40 PM Board keyPressed
+INFO: Key Pressed! 65
+June 02, 2022 2:07:40 PM Grid keyPressedLetter
+INFO: grid keypress received letter: a
+June 02, 2022 2:07:40 PM Board keyPressed
+INFO: Character Key
+June 02, 2022 2:07:40 PM Board keyPressed
+INFO: Key Pressed! 82
+June 02, 2022 2:07:40 PM Grid keyPressedLetter
+INFO: grid keypress received letter: r
+June 02, 2022 2:07:40 PM Board keyPressed
+INFO: Character Key
+June 02, 2022 2:07:41 PM Board keyPressed
+INFO: Key Pressed! 10
+June 02, 2022 2:07:41 PM Board keyPressed
+INFO: Enter Key
+June 02, 2022 2:07:46 PM Board keyPressed
+INFO: Key Pressed! 65
+June 02, 2022 2:07:46 PM Grid keyPressedLetter
+INFO: grid keypress received letter: a
+June 02, 2022 2:07:46 PM Board keyPressed
+INFO: Character Key
+June 02, 2022 2:07:46 PM Board keyPressed
+INFO: Key Pressed! 72
+June 02, 2022 2:07:46 PM Grid keyPressedLetter
+INFO: grid keypress received letter: h
+June 02, 2022 2:07:46 PM Board keyPressed
+INFO: Character Key
+June 02, 2022 2:07:46 PM Board keyPressed
+INFO: Key Pressed! 65
+June 02, 2022 2:07:46 PM Grid keyPressedLetter
+INFO: grid keypress received letter: a
+June 02, 2022 2:07:46 PM Board keyPressed
+INFO: Character Key
+June 02, 2022 2:07:47 PM Board keyPressed
+INFO: Key Pressed! 66
+June 02, 2022 2:07:47 PM Grid keyPressedLetter
+INFO: grid keypress received letter: b
+June 02, 2022 2:07:47 PM Board keyPressed
+INFO: Character Key
+June 02, 2022 2:07:47 PM Board keyPressed
+INFO: Key Pressed! 10
+June 02, 2022 2:07:47 PM Board keyPressed
+INFO: Enter Key
+June 02, 2022 2:07:55 PM Board keyPressed
+INFO: Key Pressed! 76
+June 02, 2022 2:07:55 PM Grid keyPressedLetter
+INFO: grid keypress received letter: l
+June 02, 2022 2:07:55 PM Board keyPressed
+INFO: Character Key
+June 02, 2022 2:07:55 PM Board keyPressed
+INFO: Key Pressed! 79
+June 02, 2022 2:07:55 PM Grid keyPressedLetter
+INFO: grid keypress received letter: o
+June 02, 2022 2:07:55 PM Board keyPressed
+INFO: Character Key
+June 02, 2022 2:07:56 PM Board keyPressed
+INFO: Key Pressed! 83
+June 02, 2022 2:07:56 PM Grid keyPressedLetter
+INFO: grid keypress received letter: s
+June 02, 2022 2:07:56 PM Board keyPressed
+INFO: Character Key
+June 02, 2022 2:07:56 PM Board keyPressed
+INFO: Key Pressed! 84
+June 02, 2022 2:07:56 PM Grid keyPressedLetter
+INFO: grid keypress received letter: t
+June 02, 2022 2:07:56 PM Board keyPressed
+INFO: Character Key
+June 02, 2022 2:07:56 PM Board keyPressed
+INFO: Key Pressed! 10
+June 02, 2022 2:07:56 PM Board keyPressed
+INFO: Enter Key
+June 02, 2022 2:07:59 PM Board keyPressed
+INFO: Key Pressed! 76
+June 02, 2022 2:07:59 PM Grid keyPressedLetter
+INFO: grid keypress received letter: l
+June 02, 2022 2:07:59 PM Board keyPressed
+INFO: Character Key
+June 02, 2022 2:07:59 PM Board keyPressed
+INFO: Key Pressed! 79
+June 02, 2022 2:07:59 PM Grid keyPressedLetter
+INFO: grid keypress received letter: o
+June 02, 2022 2:07:59 PM Board keyPressed
+INFO: Character Key
+June 02, 2022 2:07:59 PM Board keyPressed
+INFO: Key Pressed! 83
+June 02, 2022 2:07:59 PM Grid keyPressedLetter
+INFO: grid keypress received letter: s
+June 02, 2022 2:07:59 PM Board keyPressed
+INFO: Character Key
+June 02, 2022 2:07:59 PM Board keyPressed
+INFO: Key Pressed! 69
+June 02, 2022 2:07:59 PM Grid keyPressedLetter
+INFO: grid keypress received letter: e
+June 02, 2022 2:07:59 PM Board keyPressed
+INFO: Character Key
+June 02, 2022 2:08:00 PM Board keyPressed
+INFO: Key Pressed! 10
+June 02, 2022 2:08:00 PM Board keyPressed
+INFO: Enter Key
+June 02, 2022 2:08:03 PM Board keyPressed
+INFO: Key Pressed! 10
+June 02, 2022 2:08:03 PM Board keyPressed
+INFO: Enter Key
+June 02, 2022 2:08:14 PM Board keyPressed
+INFO: Key Pressed! 8
+June 02, 2022 2:08:14 PM Board keyPressed
+INFO: Backspace Key
+June 02, 2022 2:08:15 PM Board keyPressed
+INFO: Key Pressed! 8
+June 02, 2022 2:08:15 PM Board keyPressed
+INFO: Backspace Key
+June 02, 2022 2:08:16 PM Board keyPressed
+INFO: Key Pressed! 8
+June 02, 2022 2:08:16 PM Board keyPressed
+INFO: Backspace Key
+June 02, 2022 2:08:16 PM Board keyPressed
+INFO: Key Pressed! 8
+June 02, 2022 2:08:16 PM Board keyPressed
+INFO: Backspace Key
