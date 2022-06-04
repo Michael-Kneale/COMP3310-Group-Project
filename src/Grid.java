@@ -9,6 +9,8 @@ import java.util.logging.LogManager;
 import java.io.FileInputStream;
 import java.io.IOException;
 
+import java.awt.Color;
+
 
 public class Grid implements Iterable<Cell>{
 
@@ -163,6 +165,13 @@ public class Grid implements Iterable<Cell>{
         return word.equals(wordToGuess);
     }
 
+    public boolean checkGreen(Color colour){
+        if(colour.equals(Color.GREEN)){
+            return true;
+        }
+        return false;
+    }
+
     protected void applyHighlightingToCurrentRow(){
         BitSet highlighted = new BitSet(cells[activeRow].length);
         highlighted.clear();
@@ -192,6 +201,19 @@ public class Grid implements Iterable<Cell>{
             }
         }
 
+        if(checkWin(activeRow)){
+            System.out.println("WIN");
+        }
+    }
+
+    public boolean checkWin(int activeRow){
+        //THIS WILL NEED TO BE CHANGED FOR GAME-LENGTH FEATURE
+        for(int i = 0; i < 3; i++){
+            if(!checkGreen(cells[activeRow][i].backbgroundColor)){
+                return false;
+            }
+        }
+        return true;
     }
 
     protected int numberAlreadyHighlighted(char searchChar, Cell[] word, BitSet highlighted){
