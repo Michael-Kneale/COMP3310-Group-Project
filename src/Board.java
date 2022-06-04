@@ -82,6 +82,7 @@ public class Board {
 
 
         grid = new Grid(6,4, wordleDatabaseConnection);
+        
         //Selects the secret word from a random index
         secretWordIndex = rand.nextInt(numberOfWords);
         String theWord = wordleDatabaseConnection.getWordAtIndex(secretWordIndex);
@@ -94,6 +95,7 @@ public class Board {
 
     void paint(Graphics g){
         grid.paint(g);
+        
     }    
 
     public void keyPressed(KeyEvent e){

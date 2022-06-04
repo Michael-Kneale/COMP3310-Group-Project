@@ -28,11 +28,14 @@ public class Grid implements Iterable<Cell>{
     private static final Logger logger = Logger.getLogger(App.class.getName());
 
     Cell[][] cells;
+    Counter counter;
     int activeRow;
     int activeColumn;
+    int winCounter = 0;
     String wordToGuess;
     boolean gameFinished;
     SQLiteConnectionManager wordleDatabaseConnection;
+
     
     public Grid(int rows, int wordLength, SQLiteConnectionManager sqlConn){
         cells = new Cell[rows][wordLength];
@@ -49,6 +52,7 @@ public class Grid implements Iterable<Cell>{
         wordToGuess = "";
         gameFinished = false;
         wordleDatabaseConnection = sqlConn;
+        counter = new Counter(570, 10);
     }
 
     void setWord(String word){
@@ -57,6 +61,7 @@ public class Grid implements Iterable<Cell>{
 
     public void paint(Graphics g) {
         doToEachCell((Cell c) -> c.paint(g));
+        counter.paint(g);
     }
 
     public void reset(){
@@ -116,6 +121,9 @@ public class Grid implements Iterable<Cell>{
                         cells[activeRow][i].setInactive();
                         cells[activeRow][i].setState(3);
                     }
+                    winCounter += 1;
+                    counter.setCounter(String.valueOf(winCounter));
+                    System.out.println(winCounter);
                     gameFinished = true;
                 }else{
                     if(activeRow >= cells.length-1){
@@ -135,7 +143,6 @@ public class Grid implements Iterable<Cell>{
                         cells[activeRow][activeColumn].setActive();
                     }
                 }
-
             }
         }
     }
@@ -143,7 +150,7 @@ public class Grid implements Iterable<Cell>{
     void keyPressedLetter(char letter){
         if(!gameFinished){
             logger.log(Level.INFO, "grid keypress received letter: " + letter);
-            cells[activeRow][activeColumn].setCharacter(letter, 1);
+            cells[activeRow][activeColumn].setCharacter(Character.toLowerCase(letter), 1);
             if(activeColumn < cells[activeRow].length -1){
                 //not last character
                 cells[activeRow][activeColumn].setInactive();
@@ -160,8 +167,7 @@ public class Grid implements Iterable<Cell>{
         for(int i = 0; i < cells[activeRow].length; i++){
             word.append(cells[activeRow][i].getStoredCharacter());
         }
-        return word.equalsIgnoreCase(wordToGuess);
-        //return word.equals(wordToGuess);
+        return word.toString().equals(wordToGuess);
     }
 
     protected void applyHighlightingToCurrentRow(){
@@ -192,7 +198,6 @@ public class Grid implements Iterable<Cell>{
                 }
             }
         }
-
     }
 
     protected int numberAlreadyHighlighted(char searchChar, Cell[] word, BitSet highlighted){
