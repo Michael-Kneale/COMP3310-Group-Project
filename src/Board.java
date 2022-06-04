@@ -32,6 +32,7 @@ public class Board {
     private static final Logger logger = Logger.getLogger(App.class.getName());
 
     Grid grid;
+    Counter counter;
     SQLiteConnectionManager wordleDatabaseConnection;
     int secretWordIndex;
     int numberOfWords;
@@ -82,6 +83,7 @@ public class Board {
 
 
         grid = new Grid(6,4, wordleDatabaseConnection);
+        counter = new Counter(570, 10);
         //Selects the secret word from a random index
         secretWordIndex = rand.nextInt(numberOfWords);
         String theWord = wordleDatabaseConnection.getWordAtIndex(secretWordIndex);
@@ -94,6 +96,7 @@ public class Board {
 
     void paint(Graphics g){
         grid.paint(g);
+        counter.paint(g);
     }    
 
     public void keyPressed(KeyEvent e){

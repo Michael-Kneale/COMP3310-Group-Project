@@ -34,7 +34,7 @@ public class App extends JFrame {
         boolean stageBuilt = false;
 
         public WordleGame(){
-            setPreferredSize(new Dimension(330, 490));
+            setPreferredSize(new Dimension(330, 570));
             this.addKeyListener(this);
             board = new Board();
             stageBuilt = true;

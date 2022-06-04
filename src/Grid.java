@@ -119,6 +119,7 @@ public class Grid implements Iterable<Cell>{
                         cells[activeRow][i].setState(3);
                     }
                     winCounter += 1;
+                    System.out.println(winCounter);
                     gameFinished = true;
                 }else{
                     if(activeRow >= cells.length-1){
@@ -145,7 +146,7 @@ public class Grid implements Iterable<Cell>{
     void keyPressedLetter(char letter){
         if(!gameFinished){
             logger.log(Level.INFO, "grid keypress received letter: " + letter);
-            cells[activeRow][activeColumn].setCharacter(letter, 1);
+            cells[activeRow][activeColumn].setCharacter(Character.toLowerCase(letter), 1);
             if(activeColumn < cells[activeRow].length -1){
                 //not last character
                 cells[activeRow][activeColumn].setInactive();
@@ -160,9 +161,9 @@ public class Grid implements Iterable<Cell>{
         StringBuilder word =new StringBuilder("");
 
         for(int i = 0; i < cells[activeRow].length; i++){
-            word.append(cells[activeRow][i].getStoredCharacter().toLowerCase());
+            word.append(cells[activeRow][i].getStoredCharacter());
         }
-        return word.equals(wordToGuess);
+        return word.toString().equals(wordToGuess);
     }
 
     protected void applyHighlightingToCurrentRow(){
