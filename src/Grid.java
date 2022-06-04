@@ -138,7 +138,6 @@ public class Grid implements Iterable<Cell>{
                         cells[activeRow][activeColumn].setActive();
                     }
                 }
-
             }
         }
     }
@@ -161,10 +160,9 @@ public class Grid implements Iterable<Cell>{
         StringBuilder word =new StringBuilder("");
 
         for(int i = 0; i < cells[activeRow].length; i++){
-            word.append(cells[activeRow][i].getStoredCharacter());
+            word.append(cells[activeRow][i].getStoredCharacter().toLowerCase());
         }
-        return word.equalsIgnoreCase(wordToGuess);
-        //return word.equals(wordToGuess);
+        return word.equals(wordToGuess);
     }
 
     protected void applyHighlightingToCurrentRow(){
