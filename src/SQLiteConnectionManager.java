@@ -81,7 +81,7 @@ public class SQLiteConnectionManager {
     }
 
     /**
-     * Check that the file has been cr3eated
+     * Check that the file has been created
      *
      * @return true if the file exists in the correct location, false otherwise. If no url defined, also false.
      */

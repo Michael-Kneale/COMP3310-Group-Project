@@ -50,7 +50,9 @@ public class App extends JFrame {
         }
 
         @Override
-        public void keyPressed (KeyEvent e) {}    
+        public void keyPressed (KeyEvent e) {
+            //Intentionally left empty
+        }    
         
         @Override
         public void keyReleased (KeyEvent e) {
@@ -58,7 +60,9 @@ public class App extends JFrame {
         }    
 
         @Override
-        public void keyTyped (KeyEvent e) {}    
+        public void keyTyped (KeyEvent e) {
+            //Intentionally left empty
+        }    
 
     }
 
