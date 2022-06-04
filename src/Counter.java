@@ -21,7 +21,6 @@ public class Counter extends Rectangle{
         
         g.fillRect(130,490,size,size);
         
-        
         Font f = new Font("Arial", Font.PLAIN, 40);
         FontMetrics metrics = g.getFontMetrics(f);
         int drawXPos = x + ((size - metrics.stringWidth(""+displayCharacter))/2);
