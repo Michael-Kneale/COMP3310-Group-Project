@@ -12,9 +12,6 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 import java.util.logging.LogManager;
 import java.io.FileInputStream;
-import java.io.IOException;
-
-
 
 public class Board {
 
