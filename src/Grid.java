@@ -28,6 +28,7 @@ public class Grid implements Iterable<Cell>{
     private static final Logger logger = Logger.getLogger(App.class.getName());
 
     Cell[][] cells;
+    Counter counter;
     int activeRow;
     int activeColumn;
     int winCounter = 0;
@@ -51,6 +52,7 @@ public class Grid implements Iterable<Cell>{
         wordToGuess = "";
         gameFinished = false;
         wordleDatabaseConnection = sqlConn;
+        counter = new Counter(570, 10);
     }
 
     void setWord(String word){
@@ -59,6 +61,7 @@ public class Grid implements Iterable<Cell>{
 
     public void paint(Graphics g) {
         doToEachCell((Cell c) -> c.paint(g));
+        counter.paint(g);
     }
 
     public void reset(){
@@ -119,6 +122,7 @@ public class Grid implements Iterable<Cell>{
                         cells[activeRow][i].setState(3);
                     }
                     winCounter += 1;
+                    counter.setCounter(String.valueOf(winCounter));
                     System.out.println(winCounter);
                     gameFinished = true;
                 }else{

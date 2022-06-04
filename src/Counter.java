@@ -8,12 +8,12 @@ public class Counter extends Rectangle{
     private static int size = 70;
     protected Color backbgroundColor;
     protected Color textColor;
-    protected char displayCharacter;
+    protected String displayCharacter;
 
     public Counter(int x, int y){
         super(x,y,size,size);
         backbgroundColor = Color.BLACK;
-        textColor = Color.WHITE;
+        displayCharacter = "0";
     }
 
     void paint(Graphics g){
@@ -23,10 +23,15 @@ public class Counter extends Rectangle{
         
         Font f = new Font("Arial", Font.PLAIN, 40);
         FontMetrics metrics = g.getFontMetrics(f);
-        int drawXPos = x + ((size - metrics.stringWidth(""+displayCharacter))/2);
-        int drawYPos = y + ((size + metrics.getHeight())/2 - 10);
+        int drawXPos = 130 + ((size - metrics.stringWidth(displayCharacter))/2);
+        int drawYPos = 490 + ((size + metrics.getHeight())/2 - 10);
     
         g.setFont(f); 
-        g.drawString(""+displayCharacter, drawXPos, drawYPos);
+        g.setColor(Color.WHITE);
+        g.drawString(displayCharacter, drawXPos, drawYPos);
+    }
+
+    public void setCounter(String count){
+        displayCharacter = count;
     }
 }
