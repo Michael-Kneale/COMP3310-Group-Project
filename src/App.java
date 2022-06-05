@@ -13,7 +13,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 
-public class App extends JFrame {
+final public class App extends JFrame {
 
     static {
         // must set before the Logger
