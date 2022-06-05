@@ -62,7 +62,7 @@ public class Board {
                 while ((line = br.readLine()) != null) {
                    //System.out.println(line);
                    //Checks if String is lowercase letters a-z and 4 letters
-                   if(line.matches("^[a-z]{4}$")){
+                   if(line.matches("^[a-z]{4}$") && line.length() == 4){
                    wordleDatabaseConnection.addValidWord(i,line);
                 }
                    i++;
