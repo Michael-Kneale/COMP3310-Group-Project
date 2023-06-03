@@ -1,2 +1,1 @@
-# COMP3310A2Y2022
-Assignment 2 Starter code for COMP3310 - Wordle
+The codebase for a version of Wordle (the viral word game), which my team and I analysed a Java codebase and identified and fixed any unsecure code.
